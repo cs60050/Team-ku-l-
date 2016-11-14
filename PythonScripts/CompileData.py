@@ -6,6 +6,7 @@ import csv
 from pprint import pprint
 from collections import defaultdict
 
+
 ### Opening each JSON file, storing its content and closing it
 
 with open('etEdits.json') as json_data:
