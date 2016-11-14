@@ -21,6 +21,7 @@ from sklearn.linear_model import RidgeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import BernoulliNB, MultinomialNB
 from sklearn.linear_model import PassiveAggressiveClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 
 from sklearn.ensemble import RandomForestClassifier
@@ -128,6 +129,7 @@ for clf, name in (
 
 results.append(benchmark(BernoulliNB(alpha=.01)))   ## Since BernoulliNB is not iterbale we do it separately
 results.append(benchmark(SGDClassifier(alpha=.0001, n_iter=50, penalty="elasticnet")))
+results.append(benchmark(LinearDiscriminantAnalysis()))
 
 plt.show()
 
