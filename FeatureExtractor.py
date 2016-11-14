@@ -2,7 +2,6 @@
 ### The details of the 108 features are mentioned in the project report
 ### The output of this script will be used as training and test data from our algorithm
 
-
 import pandas as pd
 import string
 import nltk
