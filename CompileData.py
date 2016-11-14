@@ -1,6 +1,7 @@
 ### this file combines the individual JSON files scrapped of the website and writes it into a CSV file
 ### Some prelimany cleaning like joing all sentences and removing '\n\r' chars is also done in this file
 
+
 import json
 import csv
 from pprint import pprint
